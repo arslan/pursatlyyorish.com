@@ -15,11 +15,12 @@
 }
 
 .header h1, .header h3{
-  padding: 0px;
   line-height: 70px;
   height: 70px;
   margin: 0px;
 }
+
+
 
 .header h1{
   color: #0BC469;
@@ -31,9 +32,13 @@
 .header h3{
   color: #FFFFFF;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
   align-items: center;
+  padding: 0px 5px;
+}
+.h3Turkmen { 
+  font-size: 20px !important;
 }
 
 .header h3:hover{
@@ -137,7 +142,7 @@
   width: 100%;
   min-height: 100vh;
   display: inline-flex;
-  padding: 25px 80px;
+  padding: 30px 80px;
   box-sizing: border-box;
 }
 
@@ -177,12 +182,13 @@
 
 .animation{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../public/glass-greenhouse (2).png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding: 0 20px;
 }
 
 .animation > .firstImg{
@@ -192,6 +198,13 @@
   position: absolute; 
   top: 30px;
   left: 250px;
+  transition: 1s;
+}
+.animation > .firstImg:hover {
+  width: 333px;
+  height: 50vh;
+  z-index: 21;
+  left: 200px;
 }
 .animation > .firstImg >div  img{
   border-radius: 4px;
@@ -229,6 +242,13 @@
   position: absolute; 
   top: 30px;
   right: 250px;
+  transition: 1s;
+}
+.animation > .secondImg:hover {
+  width: 333px;
+  height: 50vh;
+  z-index: 21;
+  right: 200px;
 }
 .animation > .secondImg >div img{
   border-radius: 4px;
@@ -266,6 +286,13 @@
   position: absolute; 
   bottom: 30px;
   left: 250px;
+  transition: 1s;
+}
+.animation > .thirdImg:hover {
+  width: 333px;
+  height: 50vh;
+  z-index: 21;
+  left: 200px;
 }
 .animation > .thirdImg >div  img{
   border-radius: 4px;
@@ -303,6 +330,13 @@
   position: absolute; 
   bottom: 30px;
   right: 250px;
+  transition: 1s;
+}
+.animation > .fourthImg:hover {
+  width: 333px;
+  height: 50vh;
+  z-index: 21;
+  right: 200px;
 }
 .animation > .fourthImg >div  img{
   border-radius: 4px;
@@ -334,13 +368,14 @@
 }
 
 .animation > .mainImg{
-  width: 551px;
+  width: 38%;
   height: 70vh;
   border-radius: 4px;
   position: absolute; 
   top: 15vh;
-  left: 450px;
+  left: 31%;
   z-index: 20;
+  transition: 1s;
 }
 
 .animation > .mainImg >div  img{
@@ -379,6 +414,25 @@
   height: 100%;
   z-index: 5;
 }
+.backDrop:hover{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
 .pnoneNumber{
   padding-left: 16px;
+}
+
+.slider{
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+
+
+
+.contact{
+  min-height: 100vh;
+  background-image: url("../public/glass-greenhouse (3).png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }

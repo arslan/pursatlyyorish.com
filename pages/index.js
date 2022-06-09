@@ -5,10 +5,14 @@ import Image from 'next/image'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
 import { useTranslation } from "next-i18next";
+import { useState } from 'react';
 
 
 export default function Home() {
   const { t } = useTranslation("common");
+
+  const [number,setNumber] = useState(0);
+  const [currentNum, setCurrentNum] = useState(1)
 
   return (
     <div className={styles.container}>
@@ -48,7 +52,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3>- {t("aboutSection.important")}</h3>
+            <h3>{t("aboutSection.important")}</h3>
             <p>
               - {t("aboutSection.item1")}
             </p>
@@ -71,7 +75,7 @@ export default function Home() {
         </div>
 
         <div className={styles.animation}>
-          <div className={styles.firstImg}>
+          <div onClick={()=>{setNumber(1);setCurrentNum(1)}} className={number===1 ? styles.mainImg : styles.firstImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
               <Image src="/img1.png" layout="fill" alt=""/>
               <div>
@@ -80,10 +84,10 @@ export default function Home() {
                   еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
               </div>
             </div>
-            <div className={styles.backDrop}></div>
+            {number!==1 && <div className={styles.backDrop}></div>}
 
           </div>
-          <div className={styles.secondImg}>
+          <div onClick={()=>{setNumber(2);setCurrentNum(2)}} className={number===2 ? styles.mainImg :styles.secondImg || currentNum===2 && styles.secondImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
               <Image src="/img2.png" layout="fill" alt=""/>
               <div>
@@ -92,9 +96,9 @@ export default function Home() {
                   еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
               </div>
             </div>
-            <div className={styles.backDrop}></div>
+            {number !==2 && <div className={styles.backDrop}></div>}
           </div>
-          <div className={styles.thirdImg}>
+          <div onClick={()=>{setNumber(3);setCurrentNum(3)}} className={number===3 ? styles.mainImg : styles.thirdImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
               <Image src="/img3.png" layout="fill" alt=""/>
               <div>
@@ -103,9 +107,9 @@ export default function Home() {
                   еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
               </div>
             </div>
-            <div className={styles.backDrop}></div>
+           {number!==3 && <div className={styles.backDrop}></div>}
           </div>
-          <div className={styles.fourthImg}>
+          <div onClick={()=>{setNumber(4);setCurrentNum(4)}} className={number===4 ? styles.mainImg : styles.fourthImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
               <Image src="/img4.png" layout="fill" alt=""/>
               <div>
@@ -114,9 +118,9 @@ export default function Home() {
                   еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
               </div>
             </div>
-            {/* <div className={styles.backDrop}></div> */}
+            {number!==4 && <div className={styles.backDrop}></div>}
           </div>
-          <div className={styles.mainImg}>
+          <div onClick={()=>{setNumber(0);setCurrentNum(number)}} className={number===0 && styles.mainImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
               <Image src="/img0.png" layout="fill" alt=""/>
               <div>
@@ -125,8 +129,16 @@ export default function Home() {
                   еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
               </div>
             </div>
-            {/* <div className={styles.backDrop}></div> */}
+            {number!==0 &&<div className={styles.backDrop}></div>}
           </div>
+        </div>
+
+        <div className={styles.slider}>
+
+        </div>
+
+        <div className={styles.contact}>
+
         </div>
       </div>
 

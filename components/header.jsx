@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "../styles/Home.module.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
+import Link from 'next/link';
 
 const Header = () => {
     const { t } = useTranslation("common")
@@ -22,22 +23,22 @@ const Header = () => {
 
             </div>
             <div>
-                <h3>{t("common.aboutUS")}</h3>
-                <h3>{t("common.services")}</h3>
-                <h3>{t("common.contacts")}</h3>
+                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.aboutUS")}</h3>
+                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.services")}</h3>
+                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.contacts")}</h3>
                 <div className={styles.lang}>
-                    <h3 onClick={() => setLangOpen(!langOpen)}>{lang}
+                    <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen} onClick={() => setLangOpen(!langOpen)}>{t("lang")}
                         <MdKeyboardArrowDown />
 
                     </h3>
                     {langOpen && <div className={styles.langs}>
-                        <span className={styles.ActiveLang} onClick={() => changeLang("Русский")}>Русский</span>
-                        <span onClick={() => changeLang("English")}>English</span>
-                        <span onClick={() => changeLang("Turkmen")}>Turkmen</span>
+                        <span className={t("lang")==="Русский"&&styles.ActiveLang} onClick={() => changeLang("Русский")}><Link href="/ru"  locale="ru"> Русский </Link></span>
+                        <span className={t("lang")==="English"&&styles.ActiveLang} onClick={() => changeLang("English")}><Link href="/en" locale="en">English</Link></span>
+                        <span className={t("lang")==="Turkmen"&&styles.ActiveLang} onClick={() => changeLang("Turkmen")}><Link href="/tk"  locale="tk">Turkmen</Link></span>
                     </div>}
                 </div>
                 <div className={styles.verticalLine}></div>
-                <h3><Image src="/Icon.svg" width={20} height={20} alt="" />&nbsp;+993 65039539</h3>
+                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}><Image src="/Icon.svg" width={20} height={20} alt="" />&nbsp;+993 65039539</h3>
             </div>
         </div>
     )
