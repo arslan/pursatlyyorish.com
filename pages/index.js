@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
 import { useTranslation } from "next-i18next";
+import Footer from '../components/footer';
 
 
 export default function Home() {
@@ -128,9 +129,16 @@ export default function Home() {
             {/* <div className={styles.backDrop}></div> */}
           </div>
         </div>
+
+
+        
       </div>
 
 
+
+
+
+      <Footer />
     </div>
   )
 }

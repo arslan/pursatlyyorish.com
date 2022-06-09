@@ -37,7 +37,10 @@ const Header = () => {
                     </div>}
                 </div>
                 <div className={styles.verticalLine}></div>
-                <h3><Image src="/Icon.svg" width={20} height={20} alt="" />&nbsp;+993 65039539</h3>
+                <h3 className={styles.pnoneNumber}><Image src="/Icon.svg"
+                    width={20} height={20}
+                    // layout="fill"
+                    alt="" className={styles.phone} />&nbsp; &nbsp;+993 65039539</h3>
             </div>
         </div>
     )
