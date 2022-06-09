@@ -5,7 +5,11 @@ import Image from 'next/image'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
 import { useTranslation } from "next-i18next";
+<<<<<<< HEAD
 import { useState } from 'react';
+=======
+import Footer from '../components/footer';
+>>>>>>> origin/dev/jaha
 
 
 export default function Home() {
@@ -133,6 +137,7 @@ export default function Home() {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className={styles.slider}>
 
         </div>
@@ -140,9 +145,17 @@ export default function Home() {
         <div className={styles.contact}>
 
         </div>
+=======
+
+        
+>>>>>>> origin/dev/jaha
       </div>
 
 
+
+
+
+      <Footer />
     </div>
   )
 }

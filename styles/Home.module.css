@@ -1,4 +1,4 @@
-.header{
+.header {
   width: 100%;
   display: inline-flex;
   justify-content: space-evenly;
@@ -8,28 +8,39 @@
   /* z-index: 100; */
 }
 
-.header >div:last-child{
+.header>div:last-child {
   display: inline-flex;
   width: 50%;
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .header h1, .header h3{
+=======
+.header h1,
+.header h3 {
+  padding: 0px;
+>>>>>>> origin/dev/jaha
   line-height: 70px;
   height: 70px;
   margin: 0px;
 }
 
+<<<<<<< HEAD
 
 
 .header h1{
+=======
+.header h1,
+.footer h1 {
+>>>>>>> origin/dev/jaha
   color: #0BC469;
   font-weight: bold;
   font-family: sans-serif;
   font-size: 40px;
 }
 
-.header h3{
+.header h3 {
   color: #FFFFFF;
   font-size: 22px;
   font-weight: 300;
@@ -41,22 +52,23 @@
   font-size: 20px !important;
 }
 
-.header h3:hover{
+.header h3:hover {
   color: #0BC469;
 }
 
-.verticalLine{
+.verticalLine {
   width: 2px;
   height: 48px;
   background-color: #FFFFFF;
   margin: auto 0px;
 }
 
-.header h3 > img{
+.header h3>img {
   margin: auto 15px auto 0px;
+
 }
 
-.lang{
+.lang {
   background-color: #344151;
   color: #FFFFFF;
   font-size: 22px;
@@ -66,12 +78,15 @@
   width: 100px;
   display: inline-flex;
   justify-content: center;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
-.langs{
+.langs {
   background-color: #344151;
   position: absolute;
   display: block;
@@ -79,12 +94,16 @@
   height: 140px;
   padding: 10px;
   top: 70px;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 
 }
-.langs> span{
+
+.langs>span {
   display: block;
   width: 137px;
   height: 37px;
@@ -96,15 +115,15 @@
   font-weight: 400;
 }
 
-.langs> span:hover{
+.langs>span:hover {
   background-color: #0BC469;
 }
 
-.ActiveLang{
+.ActiveLang {
   background-color: rgba(153, 153, 153, 0.15);
 }
 
-.main{
+.main {
   width: 100%;
   min-height: 100vh;
   background-image: url("../public/glass-greenhouse.png");
@@ -114,7 +133,7 @@
   padding-top: 175px;
 }
 
-.main h1{
+.main h1 {
   font-size: 64px;
   text-align: center;
   margin: 0px;
@@ -123,11 +142,11 @@
   font-weight: 700;
 }
 
-.main h1:hover{
+.main h1:hover {
   color: #0BC469;
 }
 
-.main p{
+.main p {
   font-size: 22px;
   color: #fff;
   text-align: center;
@@ -138,7 +157,7 @@
 }
 
 
-.about{
+.about {
   width: 100%;
   min-height: 100vh;
   display: inline-flex;
@@ -146,41 +165,42 @@
   box-sizing: border-box;
 }
 
-.about > div:first-child{
+.about>div:first-child {
   padding-left: 30px;
   width: 60%;
 }
 
-.about > div:last-child{
+.about>div:last-child {
   width: 40%;
   margin-left: -50px;
 }
 
 
-.about > div>h3{
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 52px;
-    color: #1C232D;
+.about>div>h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  color: #1C232D;
 }
 
-.about > div > p{
+.about>div>p {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   color: #7A7A7A;
   width: 70%;
 }
-.about > div:last-child > p{
+
+.about>div:last-child>p {
   margin: 0px;
 }
 
-.about .secondImg{
+.about .secondImg {
   margin-top: 50px;
 }
 
 
-.animation{
+.animation {
   width: 100%;
   min-height: 100vh;
   background-image: url("../public/glass-greenhouse (2).png");
@@ -191,11 +211,11 @@
   padding: 0 20px;
 }
 
-.animation > .firstImg{
+.animation>.firstImg {
   width: 293px;
   height: 40vh;
   border-radius: 4px;
-  position: absolute; 
+  position: absolute;
   top: 30px;
   left: 250px;
   transition: 1s;
@@ -206,13 +226,15 @@
   z-index: 21;
   left: 200px;
 }
-.animation > .firstImg >div  img{
+
+.animation>.firstImg>div img {
   border-radius: 4px;
   position: absolute;
   z-index: 1;
   top: 0;
 }
-.animation > .firstImg >div > div{
+
+.animation>.firstImg>div>div {
   width: 96%;
   left: 2%;
   padding: 12px;
@@ -222,24 +244,26 @@
   bottom: 5px;
   background-color: #00000078;
 }
-.animation > .firstImg >div  h3{
+
+.animation>.firstImg>div h3 {
   color: #fff;
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-.animation > .firstImg >div  p{
+
+.animation>.firstImg>div p {
   color: #DBDBDB;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
-.animation > .secondImg{
+.animation>.secondImg {
   width: 293px;
   height: 40vh;
   border-radius: 4px;
-  position: absolute; 
+  position: absolute;
   top: 30px;
   right: 250px;
   transition: 1s;
@@ -250,13 +274,15 @@
   z-index: 21;
   right: 200px;
 }
-.animation > .secondImg >div img{
+
+.animation>.secondImg>div img {
   border-radius: 4px;
   position: absolute;
   z-index: 1;
   top: 0;
 }
-.animation > .secondImg >div > div{
+
+.animation>.secondImg>div>div {
   width: 96%;
   right: 2%;
   padding: 12px;
@@ -266,24 +292,26 @@
   bottom: 5px;
   background-color: #00000078;
 }
-.animation > .secondImg >div  h3{
+
+.animation>.secondImg>div h3 {
   color: #fff;
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-.animation > .secondImg >div  p{
+
+.animation>.secondImg>div p {
   color: #DBDBDB;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
-.animation > .thirdImg{
+.animation>.thirdImg {
   width: 293px;
   height: 40vh;
   border-radius: 4px;
-  position: absolute; 
+  position: absolute;
   bottom: 30px;
   left: 250px;
   transition: 1s;
@@ -294,13 +322,15 @@
   z-index: 21;
   left: 200px;
 }
-.animation > .thirdImg >div  img{
+
+.animation>.thirdImg>div img {
   border-radius: 4px;
   position: absolute;
   z-index: 1;
   top: 0;
 }
-.animation > .thirdImg >div > div{
+
+.animation>.thirdImg>div>div {
   width: 96%;
   left: 2%;
   padding: 12px;
@@ -310,24 +340,26 @@
   bottom: 5px;
   background-color: #00000078;
 }
-.animation > .thirdImg >div  h3{
+
+.animation>.thirdImg>div h3 {
   color: #fff;
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-.animation > .thirdImg >div  p{
+
+.animation>.thirdImg>div p {
   color: #DBDBDB;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
-.animation > .fourthImg{
+.animation>.fourthImg {
   width: 293px;
   height: 40vh;
   border-radius: 4px;
-  position: absolute; 
+  position: absolute;
   bottom: 30px;
   right: 250px;
   transition: 1s;
@@ -338,13 +370,15 @@
   z-index: 21;
   right: 200px;
 }
-.animation > .fourthImg >div  img{
+
+.animation>.fourthImg>div img {
   border-radius: 4px;
   position: absolute;
   z-index: 1;
   top: 0;
 }
-.animation > .fourthImg >div > div{
+
+.animation>.fourthImg>div>div {
   width: 96%;
   right: 2%;
   padding: 12px;
@@ -354,37 +388,45 @@
   bottom: 5px;
   background-color: #00000078;
 }
-.animation > .fourthImg >div  h3{
+
+.animation>.fourthImg>div h3 {
   color: #fff;
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-.animation > .fourthImg >div  p{
+
+.animation>.fourthImg>div p {
   color: #DBDBDB;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
 .animation > .mainImg{
   width: 38%;
+=======
+.animation>.mainImg {
+  width: 551px;
+>>>>>>> origin/dev/jaha
   height: 70vh;
   border-radius: 4px;
-  position: absolute; 
+  position: absolute;
   top: 15vh;
   left: 31%;
   z-index: 20;
   transition: 1s;
 }
 
-.animation > .mainImg >div  img{
+.animation>.mainImg>div img {
   border-radius: 4px;
   position: absolute;
   z-index: 1;
   top: 0;
 }
-.animation > .mainImg >div > div{
+
+.animation>.mainImg>div>div {
   width: 96%;
   left: 2%;
   padding: 12px;
@@ -394,26 +436,29 @@
   bottom: 2%;
   background-color: #00000078;
 }
-.animation > .mainImg >div  h3{
+
+.animation>.mainImg>div h3 {
   color: #fff;
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-.animation > .mainImg >div  p{
+
+.animation>.mainImg>div p {
   color: #DBDBDB;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
-.backDrop{
+.backDrop {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 5;
 }
+<<<<<<< HEAD
 .backDrop:hover{
   background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -435,4 +480,40 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+=======
+
+.phone {
+  padding-right: 10px;
+}
+
+.footerLayout {
+  width: 100%;
+  display: inline-flex;
+  background-color: #344151;
+  align-items: baseline;
+  padding: 0;
+}
+
+.footer {
+  max-width: 80rem;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.socialIcons:hover {
+  color: #0BC469;
+  padding-right: 12px;
+}
+
+.socialIcons {
+  padding-right: 12px;
+}
+
+.footerButton {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: 700;
+>>>>>>> origin/dev/jaha
 }
