@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,59 +12,124 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Header/>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <div >
+          <div className={styles.main}>
+                <h1>PURSATLY ÝÖRIŞ</h1>
+                <p>
+                  один из лидеров рынка, специализирующийся на электро-технике и электронике. 
+                  Наши устойчивые парнерские связи, от большего круга мировых производителей, 
+                  позволяет нам предложить нашим клиентам надежные и устройчивые силовые модули, 
+                  чипы/микрочипы, UC's DC-DC конверторы.
+                </p>
+          </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className={styles.about}>
+                <div>
+                    <h3>О компании</h3>
+                    <p>
+                        Индивидуальное Предприятие “Pursatly Ýöriş” было основано в 2020 году. 
+                        Компания обладает необходимыми знаниями и опытом, чтобы предложить 
+                        Вам наилучшие решения с сфере техники, электроники и электротехники. 
+                    </p>
+                    <p>
+                        Наша способна оценить нынешние и будущие потребности Вашего бизнеса и проекта, 
+                        предоставить несколько оптимальных вариантов, ускорить и оптимизировать работу Вашего предприятия.
+                    </p>
+                    <p>
+                        Мы сотрудничаем с государственными и частными компаниями, министрествами и организациями, а также 
+                        имеем доверительные парнерские отношения с иностранными производителями.
+                    </p>
+                    <Image 
+                        src="/glass-greenhouse (1).png"
+                        width={906}
+                        height={456}
+                      />
+                </div>
+                <div>
+                  <h3>Для нас важны:</h3>
+                  <p>
+                    Продуктивность
+                  </p>
+                  <p>
+                    Современность
+                  </p>
+                  <p> 
+                      Надежность
+                  </p>
+                  <div className={styles.secondImg}>
+                    <Image 
+                        src="/Frame 2.png"
+                        width={487}
+                        height={418}
+                    />
+                  </div>
+                 
+                </div>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div className={styles.animation}>
+                <div className={styles.firstImg}>
+                    <div>
+                        <Image src="/img1.png" layout="fill" />
+                        <div>
+                            <h3>Microchip</h3>
+                            <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае, 
+                              еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                        </div>
+                    </div>
+                    <div className={styles.backDrop}></div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                </div>
+                <div className={styles.secondImg}>
+                    <div>
+                        <Image src="/img2.png" layout="fill" />
+                        <div>
+                            <h3>Microchip</h3>
+                            <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае, 
+                              еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                        </div>
+                    </div>
+                    <div className={styles.backDrop}></div>
+                </div>
+                <div className={styles.thirdImg}>
+                    <div>
+                        <Image src="/img3.png" layout="fill" />
+                        <div>
+                            <h3>Microchip</h3>
+                            <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае, 
+                              еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                        </div>
+                    </div>
+                    <div className={styles.backDrop}></div>
+                </div>
+                <div className={styles.fourthImg}>
+                    <div>
+                        <Image src="/img4.png" layout="fill" />
+                        <div>
+                            <h3>Microchip</h3>
+                            <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае, 
+                              еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                        </div>
+                    </div>
+                    {/* <div className={styles.backDrop}></div> */}
+                </div>
+                <div className={styles.mainImg}>
+                    <div>
+                        <Image src="/img0.png" layout="fill" />
+                        <div>
+                            <h3>Microchip</h3>
+                            <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае, 
+                              еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                        </div>
+                    </div>
+                    {/* <div className={styles.backDrop}></div> */}
+                </div>
+          </div>
+      </div>
+     
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }

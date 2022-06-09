@@ -1,116 +1,381 @@
-.container {
-  padding: 0 2rem;
+.header{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  height: 70px;
+  background-color: #344151;
+  align-items: center;
+  /* z-index: 100; */
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.header >div:last-child{
+  display: inline-flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.header h1, .header h3{
+  padding: 0px;
+  line-height: 70px;
+  height: 70px;
+  margin: 0px;
+}
+
+.header h1{
+  color: #0BC469;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.header h3{
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+.header h3:hover{
+  color: #0BC469;
+}
+
+.verticalLine{
+  width: 2px;
+  height: 48px;
+  background-color: #FFFFFF;
+  margin: auto 0px;
+}
+
+.header h3 > img{
+  margin: auto 15px auto 0px;
+}
+
+.lang{
+  background-color: #344151;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  display: inline-flex;
   justify-content: center;
-  align-items: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+.langs{
+  background-color: #344151;
+  position: absolute;
+  display: block;
+  width: 157px;
+  height: 140px;
+  padding: 10px;
+  top: 70px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.langs> span{
+  display: block;
+  width: 137px;
+  height: 37px;
+  line-height: 37px;
+  border-radius: 4px;
   text-align: center;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.langs> span:hover{
+  background-color: #0BC469;
 }
 
-.code {
-  background: #fafafa;
+.ActiveLang{
+  background-color: rgba(153, 153, 153, 0.15);
+}
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../public/glass-greenhouse.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-top: 175px;
+}
+
+.main h1{
+  font-size: 64px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.main h1:hover{
+  color: #0BC469;
+}
+
+.main p{
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+
+.about{
+  width: 100%;
+  min-height: 100vh;
+  display: inline-flex;
+  padding: 25px 80px;
+  box-sizing: border-box;
+}
+
+.about > div:first-child{
+  padding-left: 30px;
+  width: 60%;
+}
+
+.about > div:last-child{
+  width: 40%;
+  margin-left: -50px;
+}
+
+
+.about > div>h3{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+    color: #1C232D;
+}
+
+.about > div > p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #7A7A7A;
+  width: 70%;
+}
+.about > div:last-child > p{
+  margin: 0px;
+}
+
+.about .secondImg{
+  margin-top: 50px;
+}
+
+
+.animation{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/glass-greenhouse (2).png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.animation > .firstImg{
+  width: 293px;
+  height: 40vh;
+  border-radius: 4px;
+  position: absolute; 
+  top: 30px;
+  left: 250px;
+}
+.animation > .firstImg >div  img{
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.animation > .firstImg >div > div{
+  width: 96%;
+  left: 2%;
+  padding: 12px;
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  background-color: #00000078;
 }
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.animation > .firstImg >div  h3{
+  color: #fff;
+  font-size: 20px;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  padding: 0;
+}
+.animation > .firstImg >div  p{
+  color: #DBDBDB;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.animation > .secondImg{
+  width: 293px;
+  height: 40vh;
+  border-radius: 4px;
+  position: absolute; 
+  top: 30px;
+  right: 250px;
+}
+.animation > .secondImg >div img{
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.animation > .secondImg >div > div{
+  width: 96%;
+  right: 2%;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  background-color: #00000078;
+}
+.animation > .secondImg >div  h3{
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.animation > .secondImg >div  p{
+  color: #DBDBDB;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.animation > .thirdImg{
+  width: 293px;
+  height: 40vh;
+  border-radius: 4px;
+  position: absolute; 
+  bottom: 30px;
+  left: 250px;
+}
+.animation > .thirdImg >div  img{
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.animation > .thirdImg >div > div{
+  width: 96%;
+  left: 2%;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  background-color: #00000078;
+}
+.animation > .thirdImg >div  h3{
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.animation > .thirdImg >div  p{
+  color: #DBDBDB;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.animation > .fourthImg{
+  width: 293px;
+  height: 40vh;
+  border-radius: 4px;
+  position: absolute; 
+  bottom: 30px;
+  right: 250px;
+}
+.animation > .fourthImg >div  img{
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.animation > .fourthImg >div > div{
+  width: 96%;
+  right: 2%;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  bottom: 5px;
+  background-color: #00000078;
+}
+.animation > .fourthImg >div  h3{
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.animation > .fourthImg >div  p{
+  color: #DBDBDB;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.animation > .mainImg{
+  width: 551px;
+  height: 70vh;
+  border-radius: 4px;
+  position: absolute; 
+  top: 15vh;
+  left: 450px;
+  z-index: 20;
+}
+
+.animation > .mainImg >div  img{
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.animation > .mainImg >div > div{
+  width: 96%;
+  left: 2%;
+  padding: 12px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  bottom: 2%;
+  background-color: #00000078;
+}
+.animation > .mainImg >div  h3{
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.animation > .mainImg >div  p{
+  color: #DBDBDB;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.backDrop{
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
