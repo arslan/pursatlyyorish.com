@@ -9,6 +9,7 @@ import Image from "next/image";
 const Footer = () => {
     const { t } = useTranslation('common')
     const router = useRouter();
+    
 
     return (<>
         <div className={styles.footerLayout}>
