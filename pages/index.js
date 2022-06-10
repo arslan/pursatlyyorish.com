@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
 import ContactSection from '../components/ContactSection';
 
 
@@ -159,37 +159,53 @@ export default function Home() {
                     <p>Наша компания является официальном представителем и 
                       дистрибъютером мировых лидеров в области IT электроники и электротехники. </p>
                     <div className={styles.sliderIcons}>
-                       <div className={styles.prevIcon}>
-                           &lt;
-                          {/* <Image src="/prev.png" width={49} height={49} alt="prev" /> */}
+                      <div className='swiper-button-prev'>
+                        <div className={styles.prevIcon}>
+                            &lt;
+                            {/* <Image src="/prev.png" width={49} height={49} alt="prev" /> */}
+                        </div>
                        </div>
-                       <div className={styles.nextIcon}>
-                            &gt;
-                          {/* <Image src="/next.png" width={49} height={49} alt="prev" /> */}
-                       </div>
+
+                      <div className='swiper-button-next'>
+                        <div className={styles.nextIcon}>
+                              &gt;
+                            {/* <Image src="/next.png" width={49} height={49} alt="prev" /> */}
+                        </div>
+                      </div>
                     </div>
                 </div>
                 <div className={styles.slider}>
-                  <Swiper
+                <Swiper
                       slidesPerView={3.5}
-                      spaceBetween={30}
-                      pagination={false}
-                      modules={[Pagination,Autoplay]}
+                      spaceBetween={30} 
+                      cssMode={true}
+                      navigation={{
+                        prevEl:".swiper-button-prev",
+                        nextEl:".swiper-button-next",
+                        nextIcon:"sa"
+                      }}  
+                      keyboard={true}
+                      modules={[Navigation,Keyboard,Autoplay]}  
                       loop={true}
-                      autoplay={true}
-                      // className={styles.swiper}
-                      className="mySwiper"
+                      autoplay={true} 
+                      className="mySwiper" 
                     >
-                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
-                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
-                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
-                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
-                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}  > <img  src={"/sumsung.png"}   alt="as"/> </div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/texas.png"}   alt="as"/> </div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/macron.png"}   alt="as"/> </div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/intel.png"}   alt="as"/> </div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/nxp.png"}   alt="as"/> </div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/microChip.png"}   alt="as"/> </div></SwiperSlide>
                   </Swiper>
+                  
                 </div>
+
+                
             </div>
+           
 
         </div>
+        
 
         <div className={styles.contact}>
             <div className={styles.ContactBgImg}></div>

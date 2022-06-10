@@ -476,19 +476,21 @@
 .sliderSection{
   min-height: 100vh;
   background-color: #fff;
+  width: 100%;
 }
 .sliderSection > div{
-    max-width:100%;
+    width:100%;
     margin: 0 auto;
     min-height: 100vh;
     padding-left: 150px;
     display: inline-flex;
+    justify-content: space-between;
     align-items: center;
 
 }
 
 .sliderText{
-    width: 194px;
+    width: 17%;
 }
 .sliderText > h1{
     font-size: 40px;
@@ -518,6 +520,8 @@
   margin: 0px 40px 0px 0px;
   border: 3px solid #0BC469;
   border-radius: 100%;
+  cursor: pointer;
+  user-select: none;
 }
 .nextIcon{
   width: 49px;
@@ -531,12 +535,15 @@
   margin: 0px;
   border: 3px solid #0BC469;
   border-radius: 100%;
+  cursor: pointer;
+  user-select: none;
 }
 
 .slider{
-    width: 70%;
+    width: 80%;
+    padding: 0px ;
     height: 400px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     /* background-color: #0BC469; */
     display: inline-flex;
     align-items: center;
@@ -549,18 +556,32 @@
 }
 
 .SliderItem{
-  height: 355px !important;
-  /* width: 314px !important; */
+  /* max-height: 355px; */
+  height: 355px;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 0px 4px 15px #00000010 ;
   /* background-color: red; */
-  transition: 1s;
+  transition: 1s; 
+  margin-top:25px;
+  margin-bottom: 25px; 
+}
+.SliderItem > img{
+  width: 100% !important; 
+  height: 100% !important;
+  object-fit: cover;
+  transition: 1s; 
+  border-radius: 4px;
 }
 .SliderItem:hover {
-    /* width: 350px !important; */
-    /* height: 399px !important; */
+    width: 108% !important;
+    /* max-height: 450px !important; */
+    height: 400px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 20px #1d2b3fab;
 }
-
+ 
 
 
 
