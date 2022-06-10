@@ -537,7 +537,7 @@
     width: 70%;
     height: 400px;
     margin-left: 100px;
-    background-color: #0BC469;
+    /* background-color: #0BC469; */
     display: inline-flex;
     align-items: center;
 }
@@ -553,23 +553,39 @@
   /* width: 314px !important; */
   border-radius: 4px;
   box-shadow: 0px 4px 15px #00000010 ;
-  background-color: red;
+  /* background-color: red; */
   transition: 1s;
 }
 .SliderItem:hover {
     /* width: 350px !important; */
-    height: 399px !important;
+    /* height: 399px !important; */
 }
 
 
 
 
 .contact{
-  min-height: 100vh;
-  background-image: url("../public/glass-greenhouse (3).png");
+  /* min-height: 100vh; */
+ 
+  position: relative;
+}
+.ContactBgImg{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%; 
+  background-image: url("../public/contactsBG.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: cover; 
+  filter: blur(6px);
+}
+.ContactBgBlur{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #0000002d;  
 }
 
 .phone {

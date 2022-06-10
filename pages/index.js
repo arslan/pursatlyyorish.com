@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
+import ContactSection from '../components/ContactSection';
 
 
 export default function Home() {
@@ -174,7 +175,7 @@ export default function Home() {
                       spaceBetween={30}
                       pagination={false}
                       modules={[Pagination,Autoplay]}
-                      loop
+                      loop={true}
                       autoplay={true}
                       // className={styles.swiper}
                       className="mySwiper"
@@ -191,7 +192,9 @@ export default function Home() {
         </div>
 
         <div className={styles.contact}>
-
+            <div className={styles.ContactBgImg}></div>
+            <div className={styles.ContactBgBlur}></div>
+            <ContactSection/>
         </div>
 
 
