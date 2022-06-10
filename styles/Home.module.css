@@ -228,7 +228,7 @@
   position: absolute;
   top: 30px;
   left: 250px;
-  transition: 1s;
+  transition: 1s;  
 }
 .animation > .firstImg:hover {
   width: 333px;
@@ -241,7 +241,8 @@
   border-radius: 4px;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 0; 
+  object-fit: cover;
 }
 
 .animation>.firstImg>div>div {

@@ -95,11 +95,10 @@ export default function Home() {
         <div className={styles.animation}>
           <div onClick={()=>{setNumber(1);setCurrentNum(1)}} className={number===1 ? styles.mainImg : styles.firstImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
-              <Image src="/img1.png" layout="fill" alt=""/>
+              <Image  src="/texas.png" layout="fill"   alt=""/>
               <div>
-                <h3>Microchip</h3>
-                <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае,
-                  еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                <h3>Texas Instruments</h3>
+                <p>{t('animeDesc.img1')} </p>
               </div>
             </div>
             {number!==1 && <div className={styles.backDrop}></div>}
@@ -107,44 +106,40 @@ export default function Home() {
           </div>
           <div onClick={()=>{setNumber(2);setCurrentNum(2)}} className={number===2 ? styles.mainImg :styles.secondImg || currentNum===2 && styles.secondImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
-              <Image src="/img2.png" layout="fill" alt=""/>
+              <Image src="/img2.jpg" layout="fill" alt=""/>
               <div>
                 <h3>Microchip</h3>
-                <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае,
-                  еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                <p>{t('animeDesc.img2')} </p>
               </div>
             </div>
             {number !==2 && <div className={styles.backDrop}></div>}
           </div>
           <div onClick={()=>{setNumber(3);setCurrentNum(3)}} className={number===3 ? styles.mainImg : styles.thirdImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
-              <Image src="/img3.png" layout="fill" alt=""/>
+              <Image src="/img4.png" layout="fill" alt=""/>
               <div>
-                <h3>Microchip</h3>
-                <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае,
-                  еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                <h3>Micron</h3>
+                <p>{t('animeDesc.img4')}. </p>
               </div>
             </div>
            {number!==3 && <div className={styles.backDrop}></div>}
           </div>
           <div onClick={()=>{setNumber(4);setCurrentNum(4)}} className={number===4 ? styles.mainImg : styles.fourthImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
-              <Image src="/img4.png" layout="fill" alt=""/>
+              <Image src="/img3.jpg" layout="fill" alt=""/>
               <div>
-                <h3>Microchip</h3>
-                <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае,
-                  еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                <h3>Samsung</h3>
+                <p>{t('animeDesc.img3')} </p>
               </div>
             </div>
             {number!==4 && <div className={styles.backDrop}></div>}
           </div>
           <div onClick={()=>{setNumber(0);setCurrentNum(number)}} className={number===0 && styles.mainImg || currentNum===1 && styles.firstImg || currentNum===2 && styles.secondImg || currentNum===3 && styles.thirdImg || currentNum===4 && styles.fourthImg}>
             <div>
-              <Image src="/img0.png" layout="fill" alt=""/>
+              <Image src="/img0.jpg" layout="fill" alt=""/>
               <div>
-                <h3>Microchip</h3>
-                <p>Лорем ипсум долор сит амет, ин еос мелиус бонорум молестиае,
-                  еос ан деленити цонституам. Ад хомеро сцрипторем усу. </p>
+                <h3>NXP</h3>
+                <p>{t('animeDesc.img0')} </p>
               </div>
             </div>
             {number!==0 &&<div className={styles.backDrop}></div>}

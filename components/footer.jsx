@@ -64,7 +64,7 @@ const Footer = () => {
             >
 
                 <div>
-                    <p>©2020 Pursatly Yorish. All Rights Reserved. Privacy Policy.</p>
+                    <p>©2022 Pursatly Yorish. All Rights Reserved. Privacy Policy.</p>
                 </div>
                 <div style={{ position: 'relative', width: '14rem', margin: "10px ", height: "2rem" }}>
                     <Link href="https://hillitilsimat.com/">

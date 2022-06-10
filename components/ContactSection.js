@@ -14,7 +14,7 @@ const ContactSection = () => {
                 <ContactInfo />
 
             </div>
-            <div className="flex justify-between pb-24">
+            <div className="flex justify-between pb-24 flex-wrap">
                 <div className="w-1/3 ">
 
                     <Form />
