@@ -5,8 +5,24 @@ function Form() {
     const { t } = useTranslation("common");
     const [data, setData] = useState();
 
-    const onSubmitData = () => {
-        console.log(data)
+    const onSubmitData = () => { 
+        console.log(data); 
+   
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          }).then((res) => {
+            console.log('Response received')
+            if (res.status === 200) {
+              console.log('Response succeeded!')
+             
+             
+            }
+          })
     };
     return (
         <form className="mr-12">
@@ -37,11 +53,12 @@ function Form() {
                 rows={5}
                 maxLength={1000}
                 placeholder={t("contacts.enterMessage")}
+                onChange={(e) => setData({ ...data, message: e.target.value })}
                 className="bg-white/80   rounded-sm w-full drop-shadow-md px-4 py-2 mt-2 mb-4 outline-0"
             ></textarea>
             <button
                 onClick={() => onSubmitData()}
-                type="submit"
+                type="button"
                 className="bg-[#0BC469]/70 w-full h-12 rounded-md text-white font-bold"
             >
                 {t("contacts.senButton")}

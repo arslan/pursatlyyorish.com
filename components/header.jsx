@@ -40,7 +40,7 @@ const Header = () => {
                 </div>
                 <div className={styles.verticalLine}></div>
 
-                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}><Image src="/Icon.svg" width={20} height={20} alt="" />&nbsp;+993 65039539</h3>
+                <h3  className={t("lang")==="Turkmen"&&styles.h3Turkmen}><Image src="/Icon.svg" width={20} height={20} alt="" />&nbsp;+99365039539</h3>
 {/* 
                 <h3 className={styles.pnoneNumber}><Image src="/Icon.svg"
                     width={20} height={20}
