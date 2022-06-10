@@ -17,6 +17,7 @@ const Header = () => {
         setLang(lang)
     }
     return (
+        <div className={styles.headHeader}>
         <div className={styles.header}>
             <div>
                 <h1>Pursatly Ýöriş</h1>
@@ -47,6 +48,8 @@ const Header = () => {
                     alt="" className={styles.phone} />&nbsp; &nbsp;+993 65039539</h3> */}
 
             </div>
+        </div>
+
         </div>
     )
 }

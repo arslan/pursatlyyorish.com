@@ -7,6 +7,10 @@ import styles from '../styles/Home.module.css'
 import { useTranslation } from "next-i18next"; 
 import { useState } from 'react'; 
 import Footer from '../components/footer'; 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper";
 
 
 export default function Home() {
@@ -33,7 +37,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.about}>
+        <div className={styles.about}> 
           <div>
             <h3>{t("aboutSection.title")}</h3>
             <p>
@@ -45,12 +49,24 @@ export default function Home() {
             <p>
               {t("aboutSection.desc3")}
             </p>
-            <Image
-              src="/glass-greenhouse (1).png"
-              width={906}
-              height={456}
-              alt=""
-            />
+            <div className={styles.AboutImges}>
+              <div>
+                <Image
+                  src="/glass-greenhouse (1).png"
+                  width={418}
+                  height={335}
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  src="/Frame 3183495.png"
+                  width={417}
+                  height={323}
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
           <div>
             <h3>{t("aboutSection.important")}</h3>
@@ -66,8 +82,8 @@ export default function Home() {
             <div className={styles.secondImg}>
               <Image
                 src="/Frame 2.png"
-                width={487}
-                height={418}
+                width={417}
+                height={395}
                 alt=""
               />
             </div>
@@ -135,7 +151,42 @@ export default function Home() {
         </div>
 
 
-        <div className={styles.slider}>
+        <div className={styles.sliderSection}>
+            <div>
+                <div className={styles.sliderText}>
+                    <h1>Наши партнёры</h1>
+                    <p>Наша компания является официальном представителем и 
+                      дистрибъютером мировых лидеров в области IT электроники и электротехники. </p>
+                    <div className={styles.sliderIcons}>
+                       <div className={styles.prevIcon}>
+                           &lt;
+                          {/* <Image src="/prev.png" width={49} height={49} alt="prev" /> */}
+                       </div>
+                       <div className={styles.nextIcon}>
+                            &gt;
+                          {/* <Image src="/next.png" width={49} height={49} alt="prev" /> */}
+                       </div>
+                    </div>
+                </div>
+                <div className={styles.slider}>
+                  <Swiper
+                      slidesPerView={3.5}
+                      spaceBetween={30}
+                      pagination={false}
+                      modules={[Pagination,Autoplay]}
+                      loop
+                      autoplay={true}
+                      // className={styles.swiper}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}>Slide 1</div></SwiperSlide>
+                  </Swiper>
+                </div>
+            </div>
 
         </div>
 
