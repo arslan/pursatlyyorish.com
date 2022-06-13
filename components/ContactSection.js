@@ -12,7 +12,7 @@ const ContactSection = () => {
 
         <div className="relative py-20 mx-auto max-w-7xl">
 
-            <h1 className="text-4xl text-[#fff] text-center font-bold">{t("common.contacts")}</h1>
+            <h1 className="sm:text-5xl md:text-6xl lg:text-7xl text-[#fff] text-center font-bold">{t("common.contacts")}</h1>
             <div className="px-12">
                 <ContactInfo />
 

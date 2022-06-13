@@ -14,6 +14,8 @@ import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper';
 import ContactSection from '../components/ContactSection';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import Slider from '../components/slider';
+
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -156,93 +158,15 @@ export default function Home() {
           </div>
         </div> */}
 
-        {/* <div className={styles.sliderSection}>
-          <div>
-            <div className={styles.sliderText}>
-              <h1>Наши партнёры</h1>
-              <p>
-                Наша компания является официальном представителем и
-                дистрибъютером мировых лидеров в области IT электроники и
-                электротехники.{' '}
-              </p>
-              <div className={styles.sliderIcons}>
-                <div className="swiper-button-prev">
-                  <div className={styles.prevIcon}>
-                    &lt;
-                  </div>
-                </div>
 
-                <div className="swiper-button-next">
-                  <div className={styles.nextIcon}>
-                    &gt;
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.slider}>
-              <Swiper
-                slidesPerView={3.5}
-                spaceBetween={30}
-                cssMode={true}
-                navigation={{
-                  prevEl: '.swiper-button-prev',
-                  nextEl: '.swiper-button-next',
-                  nextIcon: 'sa',
-                }}
-                keyboard={true}
-                modules={[Navigation, Keyboard, Autoplay]}
-                loop={true}
-                autoplay={true}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  {' '}
-                  <div className={styles.SliderItem}>
-                    {' '}
-                    <img src={'/sumsung.png'} alt="as" />{' '}
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {' '}
-                  <div className={styles.SliderItem}>
-                    {' '}
-                    <img src={'/texas.png'} alt="as" />{' '}
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {' '}
-                  <div className={styles.SliderItem}>
-                    {' '}
-                    <img src={'/macron.png'} alt="as" />{' '}
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {' '}
-                  <div className={styles.SliderItem}>
-                    {' '}
-                    <img src={'/intel.png'} alt="as" />{' '}
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {' '}
-                  <div className={styles.SliderItem}>
-                    {' '}
-                    <img src={'/nxp.png'} alt="as" />{' '}
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {' '}
-                  <div className={styles.SliderItem}>
-                    {' '}
-                    <img src={'/microChip.png'} alt="as" />{' '}
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </div> */}
+        <div className={styles.sliderSection}>
+         
+            <Slider/>
 
-        <div className={styles.contact}>
+        </div>
+
+
+        <div className={styles.contact} id='contactSection'>
           <div className={styles.ContactBgImg}></div>
           <div className={styles.ContactBgBlur}></div>
           <ContactSection />
