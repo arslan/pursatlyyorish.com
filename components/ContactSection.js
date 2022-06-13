@@ -6,8 +6,8 @@ import styles from "../styles/Home.module.css";
 
 
 const ContactSection = () => {
-    const { t } = useTranslation("common")
-
+	const { t } = useTranslation("common");
+ 
     return (<>
 
         <div className="max-w-7xl mx-auto  py-20 relative">
@@ -29,4 +29,5 @@ const ContactSection = () => {
     </>
     )
 }
-export default ContactSection
+export default ContactSection;
+ 
