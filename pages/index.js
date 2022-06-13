@@ -31,15 +31,15 @@ export default function Home() {
       <Header />
 
       <div >
-        <div className={styles.main}>
+        <div className={styles.main} id='heroSection'>
           <h1>PURSATLY ÝÖRIŞ</h1>
           <p>
             {t("common.heroDesc")}
           </p>
         </div>
 
-        <div className={styles.about}> 
-          <div>
+        <div className={styles.about} id='aboutSection'> 
+          <div >
             <h3>{t("aboutSection.title")}</h3>
             <p>
               {t("aboutSection.desc1")}
@@ -186,7 +186,7 @@ export default function Home() {
                       className="mySwiper" 
                     >
                       <SwiperSlide > <div className={styles.SliderItem}  > <img  src={"/sumsung.png"}   alt="as"/> </div></SwiperSlide>
-                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/texas.png"}   alt="as"/> </div></SwiperSlide>
+                      <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/texasLogo.png"}   alt="as"/> </div></SwiperSlide>
                       <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/macron.png"}   alt="as"/> </div></SwiperSlide>
                       <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/intel.png"}   alt="as"/> </div></SwiperSlide>
                       <SwiperSlide > <div className={styles.SliderItem}> <img  src={"/nxp.png"}   alt="as"/> </div></SwiperSlide>
@@ -202,7 +202,7 @@ export default function Home() {
         </div>
         
 
-        <div className={styles.contact}>
+        <div className={styles.contact} id='contactSection'>
             <div className={styles.ContactBgImg}></div>
             <div className={styles.ContactBgBlur}></div>
             <ContactSection/>

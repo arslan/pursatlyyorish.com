@@ -23,10 +23,11 @@ const Header = () => {
                 <h1>Pursatly Ýöriş</h1>
 
             </div>
-            <div>
-                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.aboutUS")}</h3>
-                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.services")}</h3>
-                <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.contacts")}</h3>
+            <div >
+                
+                <Link href='#heroSection'><h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.services")}</h3></Link>
+                <Link href='#aboutSection'><h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.aboutUS")}</h3></Link>
+                <Link href='#contactSection'><h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen}>{t("common.contacts")}</h3></Link>
                 <div className={styles.lang}>
                     <h3 className={t("lang")==="Turkmen"&&styles.h3Turkmen} onClick={() => setLangOpen(!langOpen)}>{t("lang")}
                         <MdKeyboardArrowDown />
