@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper';
 import ContactSection from '../components/ContactSection';
 import Hero from '../components/Hero';
+import About from '../components/About';
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -31,42 +32,7 @@ export default function Home() {
 
       <div>
         <Hero />
-{/* 
-        <div className={styles.about}>
-          <div>
-            <h3>{t('aboutSection.title')}</h3>
-            <p>{t('aboutSection.desc1')}</p>
-            <p>{t('aboutSection.desc2')}</p>
-            <p>{t('aboutSection.desc3')}</p>
-            <div className={styles.AboutImges}>
-              <div>
-                <Image
-                  src="/glass-greenhouse (1).png"
-                  width={418}
-                  height={335}
-                  alt=""
-                />
-              </div>
-              <div>
-                <Image
-                  src="/Frame 3183495.png"
-                  width={417}
-                  height={323}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3>{t('aboutSection.important')}</h3>
-            <p>- {t('aboutSection.item1')}</p>
-            <p>- {t('aboutSection.item2')}</p>
-            <p>- {t('aboutSection.item3')}</p>
-            <div className={styles.secondImg}>
-              <Image src="/Frame 2.png" width={417} height={395} alt="" />
-            </div>
-          </div>
-        </div> */}
+        <About />
 
         {/* <div className={styles.animation}>
           <div
