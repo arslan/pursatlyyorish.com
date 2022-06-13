@@ -57,7 +57,6 @@ const Slider = () => {
               spaceBetween: 30,
             },
           }}
-          spaceBetween={30}
           cssMode={true}
           navigation={{
             prevEl: '.swiper-button-prev',
