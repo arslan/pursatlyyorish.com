@@ -11,15 +11,18 @@ const Footer = () => {
 
   return (
     <>
-      <div className={styles.footerLayout}>
-        <div className={styles.footer}>
+      <div className='w-full inline-flex bg-[#344151] p-0'>
+        <div className='max-w-7xl  2xl:mx-auto sm:self-start text-[#fff] sm:px-4 lg:px-12 2xl:px-0'>
           <h2 className="text-[#0BC469] my-5 text-3xl font-bold">
             Pursatly Ýöriş
           </h2>
-          <div className="flex mb-6">
-            <p className="w-3/5 pt-3 pr-12 leading-6">{t('footer.desc')}</p>
-            <div className="w-1/3 my-6">
-              <h3 className="font-bold">{t('footer.salesDapartment')}</h3>
+          <div className="flex mb-6 justify-around items-center">
+            <div className='sm:hidden lg:block'>
+
+              <p className="w-3/5 pt-3 pr-12 leading-6 ">{t('footer.desc')}</p>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 my-6">
+              <h3 className="font-bold ">{t('footer.salesDapartment')}</h3>
               <button
                 className={styles.footerButton}
                 type="button"
@@ -30,7 +33,7 @@ const Footer = () => {
                 sales@pursatlyyorish.com
               </button>
             </div>
-            <div className="flex items-center justify-between p-6">
+            <div className="flex items-center justify-around p-6 sm:ml-6">
               <Link href="https://www.facebook.com/">
                 <a className={styles.socialIcons}>
                   <FaFacebookSquare />
@@ -64,14 +67,14 @@ const Footer = () => {
               height: '2rem',
             }}
           >
-            <Link href="https://hillitilsimat.com.tm/">
+            <Link href="https://hillitilsimat.com.tm/" >
               <Image
                 src="/hillitilsimat-logo.min.svg"
                 alt="Hilli Tilsimat logo"
                 objectFit="contain"
                 layout="fill"
                 priority
-              />
+                className='cursor-pointer' />
             </Link>
           </div>
         </div>

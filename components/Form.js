@@ -25,7 +25,7 @@ function Form() {
           })
     };
     return (
-        <form className="mr-12">
+        <form className="w-full">
             <label className="text-base text-white font-normal leading-5 pl-2 ">
                 {t("contacts.fio")}
             </label>
