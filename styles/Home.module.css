@@ -234,7 +234,7 @@
   border-radius: 4px;
   position: absolute;
   top: 30px;
-  left: 250px;
+  left: 15%;
   transition: 1s;
 }
 
@@ -284,7 +284,7 @@
   border-radius: 4px;
   position: absolute;
   top: 30px;
-  right: 250px;
+  right: 15%;
   transition: 1s;
 }
 
@@ -333,7 +333,7 @@
   border-radius: 4px;
   position: absolute;
   bottom: 30px;
-  left: 250px;
+  left: 15%;
   transition: 1s;
 }
 
@@ -382,7 +382,7 @@
   border-radius: 4px;
   position: absolute;
   bottom: 30px;
-  right: 250px;
+  right: 15%;
   transition: 1s;
 }
 
@@ -426,13 +426,14 @@
 }
 
 .animation>.mainImg {
-  width: 38%;
-  width: 551px;
+  width: 44%;
+  /* width: 551px; */
+  /* min-width:551px; */
   height: 70vh;
   border-radius: 4px;
   position: absolute;
   top: 15vh;
-  left: 31%;
+  left: 28%;
   z-index: 20;
   transition: 1s;
 }
@@ -664,11 +665,80 @@
   .form {
     width: 30%;
   }
+  .backDrop{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .animation{
+    background-image: none;
+  }
+  .animation>.animationImg {
+    margin: 0px auto 50px;
+    width: 295px;
+    height: 377px;
+    position: relative;
+    border-radius: 4px;   
+    box-shadow: 0px 5px 20px #A4A4A4;
+  }
+  
+ 
+  
+  .animation>.animationImg>div img {
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    object-fit: cover;
+  }
+  
+  .animation>.animationImg>div>div {
+    width: 96%;
+    left: 2%;
+    padding: 12px;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    bottom: 5px;
+    background-color: #00000078;
+  }
+  
+  .animation>.animationImg>div h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .animation>.animationImg>div p {
+    color: #DBDBDB;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+   
 
 
 }
 
 @media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 850px) {
+  .animation>.firstImg, .animation>.thirdImg {
+    width: 293px;
+    height: 40vh;
+    left: 5%;
+  }
+  .animation>.secondImg,  .animation>.fourthImg {
+    width: 293px;
+    height: 40vh;
+    right: 5%;
+  }
+  .animation>.mainImg{
+    width: 60%;
+    left:20%;
+  }
+}
 
 @media screen and (max-width: 1024px) {}
 
@@ -680,4 +750,5 @@
   .header>div:last-child {
     display: none;
   }
+ 
 }

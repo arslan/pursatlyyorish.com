@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
 import ContactSection from '../components/ContactSection';
 import Slider from '../components/slider';
-
+import MobileAnimation from "../components/mobileAnimation"
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.animation}>
+        <div className={styles.animation + " xsm:hidden md:block"}>
           <div onClick={() => { setNumber(1); setCurrentNum(1) }} className={number === 1 ? styles.mainImg : styles.firstImg || currentNum === 1 && styles.firstImg || currentNum === 2 && styles.secondImg || currentNum === 3 && styles.thirdImg || currentNum === 4 && styles.fourthImg}>
             <div>
               <Image src="/texas.png" layout="fill" alt="" />
@@ -145,6 +145,8 @@ export default function Home() {
             {number !== 0 && <div className={styles.backDrop}></div>}
           </div>
         </div>
+
+        <MobileAnimation />
 
 
         <div className={styles.sliderSection}>
