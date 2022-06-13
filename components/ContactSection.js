@@ -10,15 +10,15 @@ const ContactSection = () => {
  
     return (<>
 
-        <div className="max-w-7xl mx-auto  py-20 relative">
+        <div className="relative py-20 mx-auto max-w-7xl">
 
-            <h1 className="text-7xl text-[#fff] text-center font-bold">{t("common.contacts")}</h1>
+            <h1 className="text-4xl text-[#fff] text-center font-bold">{t("common.contacts")}</h1>
             <div className="px-12">
                 <ContactInfo />
 
             </div>
-            <div className={`${styles.contactFormMap} pb-24 px-12 flex`}>
-            <div className={` ${styles.form} lg:w-1/3 flex-grow sm:m-4 md:mr-12`}>
+            <div className={`${styles.contactFormMap} pb-24 px-10 flex`}>
+            <div className={` ${styles.form} lg:w-1/3 flex-grow sm:m-0 md:mr-12`}>
                     <Form />
                 </div>
                 <div className={`${styles.map} md:w-2/3 sm:hidden lg:block`}>

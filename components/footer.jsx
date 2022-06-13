@@ -16,18 +16,18 @@ const Footer = () => {
           <h2 className="text-[#0BC469] my-5 text-3xl font-bold">
             Pursatly Ýöriş
           </h2>
-          <div className="flex mb-6 justify-around items-center">
+          <div className="flex items-center justify-around mb-6">
             <div className='sm:hidden lg:block'>
 
               <p className="w-3/5 pt-3 pr-12 leading-6 ">{t('footer.desc')}</p>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 my-6">
+            <div className="my-6 lg:w-1/3 sm:w-1/2">
               <h3 className="font-bold ">{t('footer.salesDapartment')}</h3>
               <button
                 className={styles.footerButton}
                 type="button"
                 onClick={() =>
-                  router.push('mailto:hi@sales@pursatlyyorish.com')
+                  router.push('mailto:sales@pursatlyyorish.com')
                 }
               >
                 sales@pursatlyyorish.com
@@ -55,7 +55,7 @@ const Footer = () => {
         <div></div>
       </div>
       <div style={{ background: 'black' }}>
-        <div className="flex justify-between text-[#fff] max-w-7xl mx-auto items-center">
+        <div className="flex justify-between text-[#fff] max-w-7xl p-4 mx-auto items-center text-sm">
           <div>
             <p>©2022 Pursatly Yorish. All Rights Reserved. Privacy Policy.</p>
           </div>

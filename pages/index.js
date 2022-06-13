@@ -31,7 +31,7 @@ export default function Home() {
 
       <div>
         <Hero />
-
+{/* 
         <div className={styles.about}>
           <div>
             <h3>{t('aboutSection.title')}</h3>
@@ -66,9 +66,9 @@ export default function Home() {
               <Image src="/Frame 2.png" width={417} height={395} alt="" />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.animation}>
+        {/* <div className={styles.animation}>
           <div
             onClick={() => {
               setNumber(1);
@@ -188,9 +188,9 @@ export default function Home() {
             </div>
             {number !== 0 && <div className={styles.backDrop}></div>}
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.sliderSection}>
+        {/* <div className={styles.sliderSection}>
           <div>
             <div className={styles.sliderText}>
               <h1>Наши партнёры</h1>
@@ -203,14 +203,12 @@ export default function Home() {
                 <div className="swiper-button-prev">
                   <div className={styles.prevIcon}>
                     &lt;
-                    {/* <Image src="/prev.png" width={49} height={49} alt="prev" /> */}
                   </div>
                 </div>
 
                 <div className="swiper-button-next">
                   <div className={styles.nextIcon}>
                     &gt;
-                    {/* <Image src="/next.png" width={49} height={49} alt="prev" /> */}
                   </div>
                 </div>
               </div>
@@ -276,7 +274,7 @@ export default function Home() {
               </Swiper>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.contact}>
           <div className={styles.ContactBgImg}></div>
