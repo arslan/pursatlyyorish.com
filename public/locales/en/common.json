@@ -1,51 +1,51 @@
 {
-    "lang":"English",
+    "lang": "English",
     "common": {
-        "aboutUS":"About us",
-        "services":"Services",
-        "contacts":"Contacts",
-        "heroDesc":"one of the market leaders specializing in electrical engineering and electronics. Our stable partnerships, from a large range of global manufacturers, allows us to offer our customers reliable and adaptable power modules, chips/microchips, UC's DC-DC converters.",
-        "products":"Our products"
+        "aboutUS": "About us",
+        "services": "Services",
+        "contacts": "Contacts",
+        "heroDesc": "one of the market leaders specializing in electrical engineering and electronics. Our stable partnerships, from a large range of global manufacturers, allows us to offer our customers reliable and adaptable power modules, chips/microchips, UC's DC-DC converters.",
+        "products": "Our products"
     },
 
-    "aboutSection":{
-        "title":"About company",
-        "desc1":"Individual “Pursatly Ýöriş” was founded in 2021. The company has the necessary knowledge and experience to offer you the best solutions in the field of engineering, electronics and electrical engineering.",
-        "desc2":"Our ability to assess the current and future needs of your business and project, provide multiple best options, speed up and optimize your business.",
-        "desc3":"We cooperate with public and private companies, ministries and organizations, and also have trusting partnerships with foreign manufacturers.",
-        "important":"Important for us:",
-        "item1":"Productivity",
-        "item2":"Modern",
-        "item3":"Reliability"
-     },
+    "aboutSection": {
+        "title": "About company",
+        "desc1": "Individual “Pursatly Ýöriş” was founded in 2021. The company has the necessary knowledge and experience to offer you the best solutions in the field of engineering, electronics and electrical engineering.",
+        "desc2": "Our ability to assess the current and future needs of your business and project, provide multiple best options, speed up and optimize your business.",
+        "desc3": "We cooperate with public and private companies, ministries and organizations, and also have trusting partnerships with foreign manufacturers.",
+        "important": "Important for us:",
+        "item1": "Productivity",
+        "item2": "Modern",
+        "item3": "Reliability"
+    },
 
-     "partners":{
-         "partners":"Our partners",
-         "desc":"Our company is the official representative and distributor of world leaders in the field of IT electronics and electrical engineering."
-     },
+    "partners": {
+        "partners": "Our partners",
+        "desc": "Our company is the official representative and distributor of world leaders in the field of IT electronics and electrical engineering."
+    },
 
-     "contacts":{
-         "phone":"Phone",
-         "address":"Address",
-         "adres":"Turkmenistan / Ashgabat, Parahat 1, Building 68",
-         "fio":"Full name",
-         "enterFio":"Enter full name",
-         "emailAddress":"Email address",
-         "enterEmailAddress":"Enter email address",
-         "message":"Your message",
-         "enterMessage":"Enter your message",
-         "senButton":"Send"
-     },
-     
-     "footer":{
-         "desc":"We carry out deliveries, as well as installation and commissioning of the most reliable and technologically advanced electrical equipment. Contact our sales department for a price quote, and you can always get technical advice.",
-         "salesDapartment":"Sales department"
-     },
-     "animeDesc": {
-        "img0":"NXP Semiconductors provides solutions based on High Performance Mixed Signal and standard semiconductor components.",
-        "img1":"Texas International designs, manufactures analog and embedded semiconductors that help to create differentiated applications in markets that include industrial, automotive, personal electronics, communications equipment and enterprise systems.",
-        "img2":"Hybrid Power Drive (HPD) module by Microchip is a cost-effective unit integrating a power bridge and a driver stage. Its output power rating starts at 5 kVA.",
-        "img3":"Samsung provides a wide range of hardware products as well as IT solutions and creates unique products with a high level of technology.",
-        "img4":"Micron Technology is an American transnational corporation known for its semiconductor products, the bulk of which are DRAM and NAND memory chips, flash memory, SSD drives, and CMOS sensors."
-     }
+    "contacts": {
+        "phone": "Phone",
+        "address": "Address",
+        "adres": "Turkmenistan / Ashgabat, Parahat 1, Building 68",
+        "fio": "Full name",
+        "enterFio": "Enter full name",
+        "emailAddress": "Email address",
+        "enterEmailAddress": "Enter email address",
+        "message": "Your message",
+        "enterMessage": "Enter your message",
+        "senButton": "Send"
+    },
+
+    "footer": {
+        "desc": "We carry out deliveries, as well as installation and commissioning of the most reliable and technologically advanced electrical equipment. Contact our sales department for a price quote, and you can always get technical advice.",
+        "salesDapartment": "Sales department"
+    },
+    "animeDesc": {
+        "img0": "NXP Semiconductors provides solutions based on High Performance Mixed Signal and standard semiconductor components.",
+        "img1": "Texas International designs, manufactures analog and embedded semiconductors that help to create differentiated applications in markets that include industrial, automotive, personal electronics, communications equipment and enterprise systems.",
+        "img2": "Hybrid Power Drive (HPD) module by Microchip is a cost-effective unit integrating a power bridge and a driver stage. Its output power rating starts at 5 kVA.",
+        "img3": "Samsung provides a wide range of hardware products as well as IT solutions and creates unique products with a high level of technology.",
+        "img4": "Micron Technology is an American transnational corporation known for its semiconductor products, the bulk of which are DRAM and NAND memory chips, flash memory, SSD drives, and CMOS sensors."
+    }
 }
