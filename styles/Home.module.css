@@ -496,15 +496,17 @@
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  padding-left: 150px;
+  /* padding-left: 150px; */
   display: inline-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 
 }
 
 .sliderText {
-  width: 17%;
+  /* width: 17%; */
+  min-width: 190px;
 }
 
 .sliderText>h1 {
