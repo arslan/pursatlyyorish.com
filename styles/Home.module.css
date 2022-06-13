@@ -159,6 +159,7 @@
   width: 100%;
   min-height: 100vh;
   display: inline-flex;
+  flex-wrap:wrap;
   padding: 30px 80px;
   box-sizing: border-box;
   background-image: url("../public/aboutBack.png");
@@ -171,11 +172,13 @@
 
 .about>div:first-child {
   padding-left: 30px;
-  width: 65%;
+  /* width: 65%; */
+  min-width:320px;
 }
 
 .about>div:last-child {
-  width: 35%;
+  /* width: 35%; */
+  min-width:320px;
   /* margin-left: -50px; */
 }
 
@@ -186,9 +189,9 @@
 }
 
 .AboutImges>div:last-child {
-  height: 323px !important;
-  margin-top: 79px;
-  margin-left: 33px;
+  /* height: 323px !important; */
+  /* margin-top: 79px; */
+  /* margin-left: 33px; */
 }
 
 .about>div>h3 {
@@ -721,7 +724,13 @@
 
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+.about {
+  background-image: none;
+  padding: 5px 10px;
+}
+
+}
 
 @media screen and (max-width: 850px) {
   .animation>.firstImg, .animation>.thirdImg {

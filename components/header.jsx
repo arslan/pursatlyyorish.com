@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import Link from 'next/link';
+import BurgerMenu from '../components/BurgerMenu'
 
 const Header = () => {
     const { t } = useTranslation("common")
@@ -20,6 +21,10 @@ const Header = () => {
     return (
         <div className={styles.headHeader}>
             <div className={styles.header}>
+            <div className="lg:hidden">
+
+            <BurgerMenu />
+            </div>
                 <div>
                     <h1>Pursatly Ýöriş</h1>
 

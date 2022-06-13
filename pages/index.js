@@ -1,25 +1,26 @@
-import Head from 'next/head'
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import Image from 'next/image'
-import Header from '../components/header'
-import styles from '../styles/Home.module.css'
-import { useTranslation } from "next-i18next";
+import Image from 'next/image';
+import Header from '../components/header';
+import styles from '../styles/Home.module.css';
+import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 import Footer from '../components/footer';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper';
 import ContactSection from '../components/ContactSection';
 import Slider from '../components/slider';
-import MobileAnimation from "../components/mobileAnimation"
+import MobileAnimation from '../components/mobileAnimation';
+import Hero from '../components/Hero';
 
 export default function Home() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   const [number, setNumber] = useState(0);
-  const [currentNum, setCurrentNum] = useState(1)
+  const [currentNum, setCurrentNum] = useState(1);
 
   return (
     <div className={styles.container}>
@@ -30,70 +31,63 @@ export default function Home() {
       </Head>
       <Header />
 
-      <div >
-        <div className={styles.main} id='heroSection'>
-          <h1>PURSATLY ÝÖRIŞ</h1>
-          <p>
-            {t("common.heroDesc")}
-          </p>
-        </div>
+      <div>
+        <Hero />
 
-        <div className={`${styles.about} flex flex-wrap`} id='aboutSection'>
-          <div >
-            <h3>{t("aboutSection.title")}</h3>
-            <p>
-              {t("aboutSection.desc1")}
-            </p>
-            <p>
-              {t("aboutSection.desc2")}
-            </p>
-            <p>
-              {t("aboutSection.desc3")}
-            </p>
-            <div className={styles.AboutImges}>
-              <div>
+        <div className={`${styles.about} flex flex-wrap`} id="aboutSection">
+          <div className="w-full xl:w-3/5">
+            <h3>{t('aboutSection.title')}</h3>
+            <p>{t('aboutSection.desc1')}</p>
+            <p>{t('aboutSection.desc2')}</p>
+            <p>{t('aboutSection.desc3')}</p>
+            <div
+              className={
+                styles.AboutImges + ' mt-4 flex sm:flex-col lg:flex-row items-start'
+              }
+            >
                 <Image
                   src="/glass-greenhouse (1).png"
-                  width={418}
-                  height={335}
+                  width={800}
+                  height={800}
+                  objectFit="contain"
                   alt=""
                 />
-              </div>
-              <div>
                 <Image
                   src="/Frame 3183495.png"
-                  width={417}
-                  height={323}
+                  width={800}
+                  height={800}
+                  objectFit="contain"
                   alt=""
                 />
-              </div>
             </div>
           </div>
-          <div>
-            <h3>{t("aboutSection.important")}</h3>
-            <p>
-              - {t("aboutSection.item1")}
-            </p>
-            <p>
-              - {t("aboutSection.item2")}
-            </p>
-            <p>
-              - {t("aboutSection.item3")}
-            </p>
+          <div className="w-full xl:w-2/5">
+            <h3>{t('aboutSection.important')}</h3>
+            <p>- {t('aboutSection.item1')}</p>
+            <p>- {t('aboutSection.item2')}</p>
+            <p>- {t('aboutSection.item3')}</p>
             <div className={styles.secondImg}>
-              <Image
-                src="/Frame 2.png"
-                width={417}
-                height={395}
-                alt=""
-              />
+              <Image src="/Frame 2.png" width={417} height={395} alt="" />
             </div>
-
           </div>
         </div>
 
-        <div className={styles.animation + " xsm:hidden md:block"}>
-          <div onClick={() => { setNumber(1); setCurrentNum(1) }} className={number === 1 ? styles.mainImg : styles.firstImg || currentNum === 1 && styles.firstImg || currentNum === 2 && styles.secondImg || currentNum === 3 && styles.thirdImg || currentNum === 4 && styles.fourthImg}>
+        <div className={styles.animation + ' xsm:hidden md:block'}>
+          <div
+            onClick={() => {
+              setNumber(1);
+              setCurrentNum(1);
+            }}
+            className={
+              number === 1
+                ? styles.mainImg
+                : styles.firstImg ||
+                  (currentNum === 1 && styles.firstImg) ||
+                  (currentNum === 2 && styles.secondImg) ||
+                  (currentNum === 3 && styles.thirdImg) ||
+                  (currentNum === 4 && styles.fourthImg)
+            }
+          >
             <div>
               <Image src="/texas.png" layout="fill" alt="" />
               <div>
@@ -102,9 +96,23 @@ export default function Home() {
               </div>
             </div>
             {number !== 1 && <div className={styles.backDrop}></div>}
-
           </div>
-          <div onClick={() => { setNumber(2); setCurrentNum(2) }} className={number === 2 ? styles.mainImg : styles.secondImg || currentNum === 2 && styles.secondImg || currentNum === 1 && styles.firstImg || currentNum === 2 && styles.secondImg || currentNum === 3 && styles.thirdImg || currentNum === 4 && styles.fourthImg}>
+          <div
+            onClick={() => {
+              setNumber(2);
+              setCurrentNum(2);
+            }}
+            className={
+              number === 2
+                ? styles.mainImg
+                : styles.secondImg ||
+                  (currentNum === 2 && styles.secondImg) ||
+                  (currentNum === 1 && styles.firstImg) ||
+                  (currentNum === 2 && styles.secondImg) ||
+                  (currentNum === 3 && styles.thirdImg) ||
+                  (currentNum === 4 && styles.fourthImg)
+            }
+          >
             <div>
               <Image src="/img2.jpg" layout="fill" alt="" />
               <div>
@@ -114,7 +122,21 @@ export default function Home() {
             </div>
             {number !== 2 && <div className={styles.backDrop}></div>}
           </div>
-          <div onClick={() => { setNumber(3); setCurrentNum(3) }} className={number === 3 ? styles.mainImg : styles.thirdImg || currentNum === 1 && styles.firstImg || currentNum === 2 && styles.secondImg || currentNum === 3 && styles.thirdImg || currentNum === 4 && styles.fourthImg}>
+          <div
+            onClick={() => {
+              setNumber(3);
+              setCurrentNum(3);
+            }}
+            className={
+              number === 3
+                ? styles.mainImg
+                : styles.thirdImg ||
+                  (currentNum === 1 && styles.firstImg) ||
+                  (currentNum === 2 && styles.secondImg) ||
+                  (currentNum === 3 && styles.thirdImg) ||
+                  (currentNum === 4 && styles.fourthImg)
+            }
+          >
             <div>
               <Image src="/img4.png" layout="fill" alt="" />
               <div>
@@ -124,7 +146,21 @@ export default function Home() {
             </div>
             {number !== 3 && <div className={styles.backDrop}></div>}
           </div>
-          <div onClick={() => { setNumber(4); setCurrentNum(4) }} className={number === 4 ? styles.mainImg : styles.fourthImg || currentNum === 1 && styles.firstImg || currentNum === 2 && styles.secondImg || currentNum === 3 && styles.thirdImg || currentNum === 4 && styles.fourthImg}>
+          <div
+            onClick={() => {
+              setNumber(4);
+              setCurrentNum(4);
+            }}
+            className={
+              number === 4
+                ? styles.mainImg
+                : styles.fourthImg ||
+                  (currentNum === 1 && styles.firstImg) ||
+                  (currentNum === 2 && styles.secondImg) ||
+                  (currentNum === 3 && styles.thirdImg) ||
+                  (currentNum === 4 && styles.fourthImg)
+            }
+          >
             <div>
               <Image src="/img3.jpg" layout="fill" alt="" />
               <div>
@@ -134,7 +170,19 @@ export default function Home() {
             </div>
             {number !== 4 && <div className={styles.backDrop}></div>}
           </div>
-          <div onClick={() => { setNumber(0); setCurrentNum(number) }} className={number === 0 && styles.mainImg || currentNum === 1 && styles.firstImg || currentNum === 2 && styles.secondImg || currentNum === 3 && styles.thirdImg || currentNum === 4 && styles.fourthImg}>
+          <div
+            onClick={() => {
+              setNumber(0);
+              setCurrentNum(number);
+            }}
+            className={
+              (number === 0 && styles.mainImg) ||
+              (currentNum === 1 && styles.firstImg) ||
+              (currentNum === 2 && styles.secondImg) ||
+              (currentNum === 3 && styles.thirdImg) ||
+              (currentNum === 4 && styles.fourthImg)
+            }
+          >
             <div>
               <Image src="/img0.jpg" layout="fill" alt="" />
               <div>
@@ -148,36 +196,24 @@ export default function Home() {
 
         <MobileAnimation />
 
-
         <div className={styles.sliderSection}>
-         
-            <Slider/>
-
+          <Slider />
         </div>
 
-
-        <div className={styles.contact} id='contactSection'>
+        <div className={styles.contact} id="contactSection">
           <div className={styles.ContactBgImg}></div>
           <div className={styles.ContactBgBlur}></div>
           <ContactSection />
         </div>
-
-
-
-
       </div>
-
-
-
-
 
       <Footer />
     </div>
-  )
+  );
 }
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"])),
+    ...(await serverSideTranslations(locale, ['common'])),
   },
 });
