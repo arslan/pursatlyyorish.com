@@ -1,4 +1,41 @@
-<svg width="57" height="74" viewBox="0 0 57 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M50 4.25C50 1.9125 48.02 0 45.6 0H10.4C7.98 0 6 1.9125 6 4.25V29.75C6 32.0875 7.98 34 10.4 34H45.6C48.02 34 50 32.0875 50 29.75V4.25ZM45.6 4.25L28 14.875L10.4 4.25H45.6ZM45.6 29.75H10.4V8.5L28 19.125L45.6 8.5V29.75Z" fill="white"/>
-<path d="M10.206 69H1.314V56.256H9.882V58.866H4.284V61.26H9.576V63.726H4.284V66.372H10.206V69ZM26.8096 69H23.8036L23.8756 59.982H23.8216L20.5096 69H18.3496L15.1276 59.982H15.0736L15.1456 69H12.2476V56.256H16.6216L19.5196 64.428H19.5916L22.3636 56.256H26.8096V69ZM41.499 69H38.079L37.089 66.498H32.157L31.221 69H27.873L33.219 56.256H36.207L41.499 69ZM36.243 64.032L34.659 59.658L33.039 64.032H36.243ZM45.6483 69H42.5523V56.256H45.6483V69ZM56.3108 69H48.2828V56.256H51.3788V66.318H56.3108V69Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="44"
+   height="34"
+   viewBox="0 0 44 34"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="mail.svg"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.1891892"
+     inkscape:cx="22.733051"
+     inkscape:cy="37"
+     inkscape:window-width="2560"
+     inkscape:window-height="1328"
+     inkscape:window-x="1440"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M 44,4.25 C 44,1.9125 42.02,0 39.6,0 H 4.4 C 1.98,0 0,1.9125 0,4.25 v 25.5 C 0,32.0875 1.98,34 4.4,34 h 35.2 c 2.42,0 4.4,-1.9125 4.4,-4.25 z m -4.4,0 L 22,14.875 4.4,4.25 Z m 0,25.5 H 4.4 V 8.5 L 22,19.125 39.6,8.5 Z"
+     fill="white"
+     id="path2"
+     style="fill:#000000;fill-opacity:1" />
 </svg>

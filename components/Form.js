@@ -28,8 +28,8 @@ function Form() {
     };
     useEffect(() => {}, [token]);
     return (
-        <form className="mr-12">
-            <label className="text-base text-white font-normal leading-5 pl-2 ">
+        <form className="lg:mr-12">
+            <label className="text-base  font-bold leading-5 pl-2 ">
                 {t("contacts.fio")}
             </label>
             <input
@@ -38,10 +38,10 @@ function Form() {
                 minLength="4"
                 placeholder={t("contacts.enterFio")}
                 required
-                className="  bg-white/80    order-solid rounded-sm h-12 w-full drop-shadow-md px-4 mt-2 mb-4 outline-0"
+                className="  bg-white/80   order-solid rounded-sm h-12 w-full drop-shadow-md px-4 mt-2 mb-4 outline-0"
                 onChange={(e) => setData({ ...data, name: e.target.value })}
             />
-            <label className="text-base text-white font-normal leading-5 pl-2 ">
+            <label className="text-base  font-bold leading-5 pl-2 ">
                 {t("contacts.emailAddress")}{" "}
             </label>
             <input
@@ -51,7 +51,7 @@ function Form() {
                 className="  bg-white/80   rounded-sm h-12 w-full drop-shadow-md px-4 mt-2 mb-4 outline-0"
                 onChange={(e) => setData({ ...data, email: e.target.value })}
             />
-            <label className="text-white text-base font-normal leading-5 pl-2 mb-2">
+            <label className=" text-base font-bold leading-5 pl-2 mb-2">
                 {t("contacts.message")}
             </label>
             <textarea
@@ -69,7 +69,7 @@ function Form() {
             <button
                 onClick={() => onSubmitData()}
                 type="button"
-                className="bg-[#0BC469]/70 w-full h-12 rounded-md text-white font-bold"
+                className="bg-green w-full h-12 mt-4 rounded-md text-white font-bold"
             >
                 {t("contacts.senButton")}
             </button>
