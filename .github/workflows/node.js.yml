@@ -26,7 +26,15 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "yarn"
             - run: yarn install --frozen-lockfile
+            - run: pm2 stop next
+
+            - name: Cache nextjs build
+              uses: actions/cache@v3
+              with:
+                  path: .next/cache
+                  key: ${{ runner.os }}-nextjs-${{ hashFiles('package*.json') }}
+
             - run: yarn build
-            - run: pm2 reload next
+            - run: pm2 start next
               env:
                   CI: true

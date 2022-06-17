@@ -33,7 +33,7 @@ function Services() {
                         return (
                             <div
                                 key={name}
-                                className="shadow-md h-96 rounded-md w-72 lg:mr-6 mb-6 group hover:shadow-lg bg-white hover:shadow-darkBlue/25 transition-all hover:scale-110 duration-500 hover:z-10 overflow-clip"
+                                className="shadow-md rounded-md w-72 lg:mr-6 mb-6 group hover:shadow-lg bg-white hover:shadow-darkBlue/25 transition-all hover:scale-110 duration-500 hover:z-10 overflow-clip"
                             >
                                 <div className="flex w-full h-32 mx-auto bg-white">
                                     <Image

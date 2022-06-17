@@ -17,7 +17,7 @@ const ContactSection = () => {
                     <ContactInfo />
                 </div>
                 <div className="pb-24 flex z-10">
-                    <div className="lg:w-1/3">
+                    <div className="lg:w-1/3 sm:w-full">
                         <Form />
                     </div>
                     <div className="md:w-2/3 sm:hidden h-[28rem] lg:block z-10 my-auto">
