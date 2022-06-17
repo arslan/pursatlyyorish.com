@@ -29,7 +29,7 @@ const Footer = () => {
                                 sales@pursatlyyorish.com
                             </Link>
                         </div>
-                        <div className="flex items-center justify-around p-6 sm:ml-6">
+                        <div className="flex items-center lg:justify-around lg:p-6 sm:ml-8">
                             <Link href="https://www.facebook.com/">
                                 <a className="mr-2">
                                     <FaFacebookSquare />
