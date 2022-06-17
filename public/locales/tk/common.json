@@ -1,51 +1,52 @@
 {
-    "lang":"Turkmen",
+    "lang": "Türkmençe",
     "common": {
-        "aboutUS":"Biz barada",
-        "services":"Hyzmatlarymyz",
-        "contacts":"Habarlaşmak",
-        "heroDesc":"elektrik in engineeringenerçiligi we elektronika bilen meşgullanýan bazar liderlerinden biri. Dünýä öndürijileriniň köpüsinden durnukly hyzmatdaşlygymyz, müşderilerimize ygtybarly we uýgunlaşdyrylan güýç modullaryny, çipleri / mikroçipleri, UC-nyň DC-DC öwrüjilerini hödürlemäge mümkinçilik berýär.",
-        "products":"Biziň harytlarymyz"
+        "aboutUS": "Biz barada",
+        "servicesTitle": "Hyzmatlarymyz",
+        "partners":"Hyzmatdaşlarymyz",
+        "contacts": "Habarlaşmak",
+        "heroDesc": "elektrotehniki we elektronika boýunça ýöriteleşdirilen bazardaky öňdebaryjy kompaniýalaryň biri bolup durýar. Dünýädaky öndürijileriniň giň topary bilen durnukly hyzmatdaşlykda bolmak bilne, öz müşderilerimize ygtybarly we durnukly tok modullaryny, çipleri /mikroçipleri, UC’s DC-DC konwertorlary hödürlemäge mümkinçilik berýär.",
+        "products": "Biziň harytlarymyz"
     },
 
-    "aboutSection":{
-        "title":"Kompaniýamyz hakda",
-        "desc1":"Aýry-aýry 'Pursatly Ýöriş' 2021-nji ýylda esaslandyryldy. Kompaniýa, in engineeringenerçilik, elektronika we elektrik in engineeringenerçiligi pudagynda iň oňat çözgütleri hödürlemek üçin zerur bilim we tejribä eýe.",
-        "desc2":"Işiňiziň we taslamaňyzyň häzirki we geljekki zerurlyklaryna baha bermek, iň oňat wariantlary üpjün etmek, işiňizi çaltlaşdyrmak we optimizirlemek ukybymyz.",
-        "desc3":"Döwlet we hususy kompaniýalar, ministrlikler we guramalar bilen hyzmatdaşlyk edýäris we daşary ýurt öndürijileri bilen ynamdar hyzmatdaşlygymyz bar.",
-        "important":"Biziň üçin möhüm:",
-        "item1":"Önümçilik",
-        "item2":"Döwrebap",
-        "item3":"Ygtybarlylyk"
-     },
+    "aboutSection": {
+        "title": "Kompaniýamyz hakda",
+        "desc1": "“Pursatly Ýöriş” HK 2021-nji ýylda esaslandyryldy. Kompaniýa, elektrotehnika, elektronika we tehnika pudagynda amatly çözgütleri hödürlemekde zerur bolan bilime we tejribä eýedir.",
+        "desc2": "Biz siziň işiňiziň we taslamaňyzyň häzirki we geljekdäki zerurlyklaryna baha bermäge, öz kärhanaňyzyň işini çaltlaşdyrjak we ýeňilleşdirjek birnäçe amatly görnüşleri üpjün edýäris. ",
+        "desc3": "Biz döwlet we hususy kompaniýalar, ministrlikler we guramalar bilen hyzmatdaşlyk edýäris, şeýle hem daşary ýurt öndürijileri bilen ynamdar hyzmatdaşlygymyz bar.",
+        "important": "Biziň üçin möhüm:",
+        "item1": "Önümçilik",
+        "item2": "Döwrebapçylyk",
+        "item3": "Ygtybarlylyk"
+    },
 
-     "partners":{
-         "partners":"Hyzmatdaşlarymyz",
-         "desc":"Biziň kompaniýamyz, elektronika we elektrik in engineeringenerçiligi pudagynda dünýä liderleriniň resmi wekili we paýlaýjysy."
-     },
+    "partners": {
+        "partners": "Hyzmatdaşlarymyz",
+        "desc": "Biziň kompaniýamyz IT elektronikasy we elektrotehnika pudagynda dünýäda öňdebaryjy resmi wekili we üpjün ediji bolup durýar. "
+    },
 
-     "contacts":{
-         "phone":"Telefon",
-         "address":"Adres",
-         "adres":"Türkmenistan / Aşgabat, Parahat 1, Bina 68",
-         "fio":"Doly adyňyz",
-         "enterFio":"Doly adyňyzy giriziň",
-         "emailAddress":"E-poçta salgyňyz",
-         "enterEmailAddress":"E-poçta salgyňyzy giriziň",
-         "message":"Habaryňyz",
-         "enterMessage":"Habaryňyzy giriziň",
-         "senButton":"Ugrat"
-     },
-     
-     "footer":{
-         "desc":"Iň ygtybarly we tehnologiki taýdan ösen elektrik enjamlaryny gurnamak we işe girizmek bilen birlikde eltip berýäris. Bahalary satmak üçin satuw bölümimize ýüz tutuň, hemişe tehniki maslahat alyp bilersiňiz.",
-         "salesDapartment":"Satyş bölümi"
-     },
-     "animeDesc": {
-        "img0":"NXP ýarymgeçirijiler ýokary öndürijilikli garyşyk signal we adaty ýarymgeçiriji komponentlere esaslanýan çözgütleri üpjün edýär.",
-        "img1":"“Texas International”, senagat, awtoulag, şahsy elektronika, aragatnaşyk enjamlary we kärhana ulgamlaryny öz içine alýan bazarlarda dürli görnüşli programmalary döretmäge kömek edýän analog we oturdylan ýarymgeçirijileri dizaýn edýär, öndürýär.",
-        "img2":"H“Microchip” -iň “Gibrid Power Drive” (HPD) moduly, güýç köprüsini we sürüjiniň basgançagyny birleşdirýän tygşytly birlikdir. Onuň çykyş güýji bahasy 5 kVA-dan başlaýar.",
-        "img3":"Samsung, IT çözgütleri ýaly köp sanly enjam önümlerini hödürleýär we ýokary derejeli tehnologiýa bilen özboluşly önümleri döredýär.",
-        "img4":"“Micron Technology” ýarymgeçiriji önümleri bilen tanalýan Amerikanyň köpmilletli korporasiýasy bolup, onuň esasy bölegi DRAM we NAND ýat çipleri, fleş ýady, SSD diskleri we CMOS datçikleri."
-     }
+    "contacts": {
+        "phoneTitle": "Telefon",
+        "addressTitle": "Adres",
+        "address": "Türkmenistan, Aşgabat, Parahat 1, Bina 68",
+        "fio": "Doly adyňyz",
+        "enterFio": "Doly adyňyzy giriziň",
+        "emailAddress": "E-poçta salgyňyz",
+        "enterEmailAddress": "E-poçta salgyňyzy giriziň",
+        "message": "Habaryňyz",
+        "enterMessage": "Habaryňyzy giriziň",
+        "senButton": "Ugrat"
+    },
+
+    "footer": {
+        "desc": "Iň ygtybarly we tehnologiki taýdan ösen elektrik enjamlaryny gurnamak we işe girizmek bilen birlikde eltip berýäris. Bahalary almak üçin biziň söwda-satyş bölümimiz bilen habarlaşyň, şeýle-de hemişe tehniki maslahat alyp bilersiňiz.",
+        "salesDapartment": "Satyş bölümi"
+    },
+    "animeDesc": {
+        "desc_NXP": "NXP ýarymgeçirijiler ýokary öndürijilikli garyşyk sanly-analog (High Performance Mixed Signal) we standart ýarymgeçiriji komponentlere esaslanýan çözgütleri hödürleýär.",
+        "desc_TI": "Texas International kompaniýasy tapawutlandyrylan programma üpjünçiligini döretmekde bazarda oturdylan we analogly ýarymgeçirijileri, şol sanda senagat, awtoulag, şahsy elektronikany, aragatnaşyk enjamlaryny we  korporatiw ulgamlaryny işläp taýýarlaýar we öndürýär. ",
+        "desc_MC": "Microchip kompaniýasynyň Hybrid Power Drive moduly (güýçlendiriji moduly) tygşytly täsirli enjamy, baglaýjy tok köprüsini we draýwer kaskadyny hödürleýär. Onuň nominal çykyş güýji 5 kWa-dan başlaýar.",
+        "desc_SG": "Samsung giň gerimli enjam önümlerini, şeýle-de IT ulgamynda çözgütleri hödürleýär we ýokary derejeli tehnologiýa bilen özboluşly önümleri döredýär.",
+        "desc_MN": "Micron Technology - ýarymgeçiriji önümleri bilen tanalýan Amerikanyň transmilli korporasiýasy bolup, onuň esasy bölegi DRAM we NAND, fleş-ýatda saklaýjy, SSD-toplaýjy, şeýle-de  CMOS datçikleri özünde tuplaýar."
+    }
 }

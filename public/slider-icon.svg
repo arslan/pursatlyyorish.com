@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="70.100296mm"
+   height="70.100296mm"
+   viewBox="0 0 70.100296 70.100296"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="slider-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="125.70373"
+     inkscape:cy="226.18263"
+     inkscape:window-width="2560"
+     inkscape:window-height="1328"
+     inkscape:window-x="1440"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-56.050896,-58.053117)">
+    <circle
+       style="fill:none;stroke:#0bc469;stroke-width:4.045;stroke-dasharray:none;stroke-opacity:1"
+       id="path61"
+       cx="91.101044"
+       cy="-93.103264"
+       r="32.877647"
+       transform="scale(1,-1)" />
+    <g
+       aria-label="&gt;"
+       transform="matrix(0.90965642,0,0,0.73002235,17.920717,17.232984)"
+       id="text1894"
+       style="font-size:43.2525px;line-height:1.25;fill:#0bc469;fill-opacity:1;stroke:none;stroke-width:1.8161635;stroke-dasharray:none">
+      <path
+         d="m 72.528734,112.79547 14.922112,-8.69375 V 103.7557 L 72.528734,95.061948 v -3.63321 l 18.16605,10.769872 v 3.4602 l -18.16605,10.76987 z"
+         style="font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans';fill:#0bc469;fill-opacity:1;stroke:#0bc469;stroke-width:1.8161635;stroke-dasharray:none;stroke-opacity:1"
+         id="path2737" />
+    </g>
+  </g>
+</svg>
