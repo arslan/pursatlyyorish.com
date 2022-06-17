@@ -11,14 +11,14 @@ function About() {
     return (
         <section id="about" className="relative bg-[url('/background-about.webp')] bg-cover">
         <div className="w-full h-full absolute bg-gradient-to-b from-white/0 to-white"></div>
-            <div className="flex mx-auto xsm:flex-wrap md:flex-nowrap section-body">
-                <div className="">
+            <div className="flex mx-auto xsm:flex-wrap md:flex-nowrap section-body z-10">
+                <div className="z-10">
                     <h2>{t("aboutSection.title")}</h2>
                     <p>{t("aboutSection.desc1")}</p>
                     <p>{t("aboutSection.desc2")}</p>
                     <p>{t("aboutSection.desc3")}</p>
                 </div>
-                <div className="flex-shrink-0 xl:ml-10">
+                <div className="flex-shrink-0 xl:ml-10 z-10">
                     <h2>{t("aboutSection.important")}</h2>
                     <ul className="ml-4 list-disc">
                         <li>{t("aboutSection.item1")}</li>
