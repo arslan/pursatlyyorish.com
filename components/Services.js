@@ -24,7 +24,7 @@ function Services() {
     ];
 
     return (
-        <section id="services" className="relative bg-[url('/background-partners.png')] bg-cover">
+        <section id="services" className="relative bg-[url('/background-partners.webp')] bg-cover">
             <div className="absolute w-full h-full bg-gradient-to-b from-white via-white/25 to-white"></div>
             <div className="relative section-body mx-auto">
                 <h2 className="">{t("common.servicesTitle")}</h2>

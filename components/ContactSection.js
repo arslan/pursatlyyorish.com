@@ -7,7 +7,7 @@ const ContactSection = () => {
     const { t } = useTranslation("common");
 
     return (
-        <section id="contacts" className="relative  bg-[url('/background-contacts.png')] bg-cover">
+        <section id="contacts" className="relative  bg-[url('/background-contacts.webp')] bg-cover">
             <div className="bg-gradient-to-b from-white via-white/75 to-darkBlue absolute w-full h-full"></div>
             <div className="w-full section-body h-full mx-auto flex flex-col">
                 <h1 className="mt-10 text-4xl text-center font-bold mb-12 z-10">

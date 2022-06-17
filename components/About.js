@@ -9,7 +9,7 @@ import chip_3 from "/public/microchip-3.png";
 function About() {
     const { t } = useTranslation("common");
     return (
-        <section id="about" className="relative bg-[url('/background-about.png')] bg-cover">
+        <section id="about" className="relative bg-[url('/background-about.webp')] bg-cover">
         <div className="w-full h-full absolute bg-gradient-to-b from-white/0 to-white"></div>
             <div className="flex mx-auto xsm:flex-wrap md:flex-nowrap section-body">
                 <div className="">
