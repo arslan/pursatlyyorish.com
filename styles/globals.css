@@ -47,3 +47,20 @@ a {
     box-sizing: border-box;
     font-family: IBM Plex Sans Regular;
 }
+
+h2 {
+    @apply font-bold text-3xl mb-4 mt-4;
+}
+
+p {
+    @apply leading-relaxed;
+}
+
+.section-body {
+    @apply xl:px-24 xl:pt-12 max-w-7xl;
+    @apply sm:px-12 sm:pt-6;
+}
+
+.slider-icon {
+    @apply w-12 h-12 flex items-center justify-center text-2xl text-green font-bold pl-1 border-[3px] border-solid border-green rounded-full cursor-pointer select-none;
+}

@@ -5,12 +5,12 @@ function BurgerMenu() {
     let styles = {
         bmBurgerButton: {
             position: "relative",
-            width: "36px",
-            height: "30px",
+            width: "25px",
+            height: "20px",
         },
         bmBurgerBars: {
             background: "#ffffff",
-            height: "3px",
+            height: "2px",
         },
         bmBurgerBarsHover: {
             background: "#a90000",
@@ -55,7 +55,8 @@ function BurgerMenu() {
         { lang: "ru", name: "Russian", href: "/" },
         { lang: "tk", name: "Turkmen", href: "/" },
     ];
-    return (
+    return (<div className="mx-8 xl:hidden">
+
         <Menu styles={styles}>
             {langs.map(({ lang, name, href }) => {
                 return (
@@ -65,6 +66,7 @@ function BurgerMenu() {
                 );
             })}
         </Menu>
+    </div>
     );
 }
 

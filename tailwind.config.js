@@ -5,6 +5,13 @@ module.exports = {
     ],
     theme: {
         extend: {},
+        colors: {
+            'darkBlue': '#344151',
+            'green':'#0bc469',
+            'white':'white',
+            'grey':'#7a7a7a',
+            'black':'black'
+        },
         screens: {
             xsm: "0px",
             sm: "320px",

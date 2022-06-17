@@ -1,114 +1,32 @@
 import { useTranslation } from "next-i18next";
-import React, { useState } from "react";
-import styles from "../styles/Home.module.css";
 
-import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
+import LanguageMenu from "./Header/LanguageMenu";
+import Navbar from "./Header/Navbar";
 
 const Header = () => {
     const { t } = useTranslation("common");
 
-    const [lang, setLang] = useState("Русский");
-    const [langOpen, setLangOpen] = useState(false);
 
-    const changeLang = (lang) => {
-        setLangOpen(!langOpen);
-        setLang(lang);
-    };
     return (
-        <div className={styles.headHeader}>
-            <div className={styles.header}>
-                <div className="lg:hidden">
-                    <BurgerMenu />
+        <div className="w-full bg-darkBlue fixed z-50">
+            <div className="flex items-center w-full h-16 mx-auto my-0 bg-darkBlue">
+                <BurgerMenu />
+                <div className="xl:ml-24">
+                    <h1 className="font-sans text-3xl font-semibold text-green">
+                        Pursatly Ýöriş
+                    </h1>
                 </div>
-                <div>
-                    <h1>Pursatly Ýöriş</h1>
-                </div>
-                <div className={styles.headerItems}>
-                    <Link href="#heroSection">
-                        <h3
-                            className={
-                                t("lang") === "Turkmen" && styles.h3Turkmen
-                            }
-                        >
-                            {t("common.services")}
-                        </h3>
-                    </Link>
-                    <Link href="#aboutSection">
-                        <h3
-                            className={
-                                t("lang") === "Turkmen" && styles.h3Turkmen
-                            }
-                        >
-                            {t("common.aboutUS")}
-                        </h3>
-                    </Link>
-                    <Link href="#contactSection">
-                        <h3
-                            className={
-                                t("lang") === "Turkmen" && styles.h3Turkmen
-                            }
-                        >
-                            {t("common.contacts")}
-                        </h3>
-                    </Link>
-                    <div className={styles.lang}>
-                        <h3
-                            className={
-                                t("lang") === "Turkmen" && styles.h3Turkmen
-                            }
-                            onClick={() => setLangOpen(!langOpen)}
-                        >
-                            {t("lang")}
-                            <MdKeyboardArrowDown />
-                        </h3>
-                        {langOpen && (
-                            <div className={styles.langs}>
-                                <span
-                                    className={
-                                        t("lang") === "Русский" &&
-                                        styles.ActiveLang
-                                    }
-                                    onClick={() => changeLang("Русский")}
-                                >
-                                    <Link href="/ru" locale="ru">
-                                        {" "}
-                                        Русский{" "}
-                                    </Link>
-                                </span>
-                                <span
-                                    className={
-                                        t("lang") === "English" &&
-                                        styles.ActiveLang
-                                    }
-                                    onClick={() => changeLang("English")}
-                                >
-                                    <Link href="/en" locale="en">
-                                        English
-                                    </Link>
-                                </span>
-                                <span
-                                    className={
-                                        t("lang") === "Turkmen" &&
-                                        styles.ActiveLang
-                                    }
-                                    onClick={() => changeLang("Turkmen")}
-                                >
-                                    <Link href="/tk" locale="tk">
-                                        Turkmen
-                                    </Link>
-                                </span>
-                            </div>
-                        )}
-                    </div>
-                    <div className={styles.verticalLine}></div>
+                <div className="items-center justify-end flex-grow float-right w-1/2 text-white xl:flex xsm:hidden">
+                    <Navbar />
+                    <LanguageMenu />
+                    <div className="w-0.5 h-10 bg-white mx-5"></div>
 
-                    <h3 className={t("lang") === "Turkmen" && styles.h3Turkmen}>
+                    <div className="flex items-center ml-5 mr-24">
                         <Image src="/Icon.svg" width={20} height={20} alt="" />
-                        &nbsp;+99365039539
-                    </h3>
+                        <p className="ml-2">+99365039539</p>
+                    </div>
                 </div>
             </div>
         </div>
