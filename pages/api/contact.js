@@ -4,7 +4,7 @@ export default async function (options, res) {
         service: "Gmail",
         auth: {
             user: "pursatly***REMOVED***@gmail.com",
-            pass: "***REMOVED***",
+            pass: "",
         },
     });
 
