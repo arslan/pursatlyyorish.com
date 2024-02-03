@@ -3,14 +3,14 @@ export default async function (options, res) {
     const transporter = nodemailer.createTransport({
         service: "Gmail",
         auth: {
-            user: "pursatly***REMOVED***@gmail.com",
+            user: "pursatlyyorish2022@gmail.com",
             pass: "",
         },
     });
 
     const mailOptions = {
-        from: `Sebet Contact-Us <pursatly***REMOVED***@gmail.com>`,
-        to: "pursatly***REMOVED***@gmail.com",
+        from: `Sebet Contact-Us <pursatlyyorish2022@gmail.com>`,
+        to: "pursatlyyorish2022@gmail.com",
         subject: 'Biri "Sebet" administratsiýasy bilen habarlaşmak isleýär',
         text: `ADY: `,
     };
@@ -30,14 +30,14 @@ export default async function (options, res) {
     //   port: 465,
     //   host: "smtp.gmail.com",
     //   auth: {
-    //     user: 'pursatly***REMOVED***@gmail.com',
-    //     pass: "***REMOVED***"
+    //     user: 'pursatlyyorish2022@gmail.com',
+    //     pass: ""
     //   },
     // //   secure: true,
     // })
     // const mailData = {
     //   from: 'demo email den',
-    //   to: 'pursatly***REMOVED***@gmail.com',
+    //   to: 'pursatlyyorish2022@gmail.com',
     //   subject: `Message From ${req.body.name}`,
     //   text: req.body.message + " | Sent from: " + req.body.email,
     // //   html: `<div>${req.body.message}</div><p>Sent from:
